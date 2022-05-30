@@ -1,0 +1,58 @@
+.sidebar {
+    .sidebar__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .sidebar__list {
+        display: grid;
+        grid-gap: 10px;
+
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+    }
+
+    .sidebar__select {
+        @include media-breakpoint-up(lg) {
+            display: none;
+        }
+
+
+        .multiselect__option--selected:after {
+            display: none;
+        }
+    }
+
+    .sidebar__link {
+        color: $dark;
+        font-size: 14px;
+        line-height: 16px;
+        display: inline-block;
+
+        &:hover {
+            color: $primary;
+            text-decoration: none;
+        }
+    }
+
+    .sidebar__exit {
+        color: $gray;
+        margin-top: 20px;
+    }
+
+    .sidebar__link.nuxt-link-exact-active {
+        border-bottom: 2px solid $primary;
+    }
+
+    .sidebar__select-exit {
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid $light;
+        margin: -12px;
+        padding: 12px;
+        color: $gray;
+    }
+
+}

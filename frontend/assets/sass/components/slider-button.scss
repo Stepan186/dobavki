@@ -1,0 +1,17 @@
+.slider-button {
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $light;
+
+    &:hover {
+        background: mix(black, $light, 10%);
+    }
+
+    &.swiper-button-disabled {
+        opacity: 0.3;
+        pointer-events: none;
+    }
+}

@@ -1,0 +1,53 @@
+.link {
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.link_dark {
+    color: $dark;
+
+    &:hover {
+        color: $primary;
+    }
+}
+
+.link_gray {
+    color: $gray;
+
+    &:hover {
+        color: $primary;
+    }
+}
+
+.link_primary {
+    color: $primary;
+
+    &:hover {
+        color: $dark;
+    }
+}
+
+.link_underlined {
+    border-bottom: 2px solid $primary;
+    padding-bottom: 5px;
+    display: inline-block;
+    color: unset;
+
+    &:hover {
+        color: $primary;
+    }
+}
+
+.link_dashed {
+    border-bottom: 1px dashed currentColor;
+}
+
+.link__icon {
+    vertical-align: middle;
+    margin-right: 5px;
+    color: $primary;
+    line-height: 16px;
+}

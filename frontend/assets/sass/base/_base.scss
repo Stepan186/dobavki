@@ -1,0 +1,52 @@
+body {
+  width: 100%;
+  margin: 0;
+  background: #f6f6f6;
+  background-size: cover;
+  color: $dark;
+  backface-visibility: hidden;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  line-height: 18px;
+  color: $dark;
+  &:hover {
+    color: $dark;
+  }
+  img {
+    margin-right: 10px;
+    width: 35px;
+  }
+  .logo__title {
+    font-size: 20px;
+  }
+  .logo__subtitle {
+    font-size: 10px;
+  }
+}
+
+.logo_light {
+  color: $light;
+  &:hover {
+    color: $light;
+  }
+}
+
+.loading-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

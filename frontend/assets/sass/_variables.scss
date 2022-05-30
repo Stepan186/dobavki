@@ -1,0 +1,59 @@
+$primary: #1FB26C;
+$secondary: #D5E626;
+$light: white;
+$dark: #373C53;
+$gray: #a4bab1;
+$gray-light: #f0f0f0;
+$danger: #EB5757;
+$warning: #fffa00;
+
+$theme-colors: (
+        "primary": $primary,
+        "secondary": $secondary,
+        "light": $light,
+        "dark": $dark,
+        "gray": $gray,
+        "danger": $danger,
+        "warning": $warning,
+);
+
+$base-font-family: 'Roboto', sans-serif;
+$header-font-family: 'Montserrat', sans-serif;
+
+$base-font: 300 16px/150% $base-font-family;
+
+$h1-font: 700 48px/115% $header-font-family;
+$h1-font-sm: 700 32px/115% $header-font-family;
+
+$h2-font: 700 36px/115% $header-font-family;
+$h2-font-sm: 700 28px/115% $header-font-family;
+
+$h3-font: 700 28px/115% $header-font-family;
+$h3-font-sm: 700 24px/115% $header-font-family;
+
+$h4-font: 700 22px/115% $header-font-family;
+$h4-font-sm: 700 18px/115% $header-font-family;
+
+$h5-font: 700 18px/125% $base-font-family;
+$h5-font-sm: 700 18px/125% $base-font-family;
+
+$small-font: 400 14px/18px $base-font-family;
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px
+);
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl:1170px
+);
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "mixins/scroll";

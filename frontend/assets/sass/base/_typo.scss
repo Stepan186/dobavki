@@ -1,0 +1,103 @@
+body {
+  font: $base-font;
+  font-weight: 300;
+}
+
+.h1, h1 {
+  font: $h1-font;
+  margin-bottom: 2rem;
+
+  @include media-breakpoint-down(md) {
+    font: $h1-font-sm;
+    margin-bottom: 1rem;
+  }
+}
+
+.h1_super {
+  font-size: 46px;
+  margin-bottom: 1rem;
+
+  @include media-breakpoint-down(md) {
+    font: $h1-font-sm;
+  }
+}
+
+.h2, h2 {
+  font: $h2-font;
+  margin-bottom: 1rem;
+
+  @include media-breakpoint-down(md) {
+    font: $h2-font-sm;
+  }
+}
+
+.h3, h3 {
+  font: $h3-font;
+  margin-bottom: 1rem;
+
+  @include media-breakpoint-down(md) {
+    font: $h3-font-sm;
+  }
+}
+
+.h4, h4 {
+  font: $h4-font;
+  margin-bottom: 1rem;
+
+  @include media-breakpoint-down(md) {
+    font: $h4-font-sm;
+  }
+}
+
+.h5, h5 {
+  font: $h5-font;
+  margin-bottom: 1rem;
+
+  @include media-breakpoint-down(md) {
+    font: $h5-font-sm;
+  }
+}
+
+a {
+  color: $primary;
+
+  &:hover {
+    color: darken($primary, 10%);
+  }
+}
+
+p, .list-styled {
+  a {
+    border-bottom: 1px dashed orange;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+[role=button] {
+  cursor: pointer;
+}
+
+small, .small {
+  line-height: 1.1;
+  font: $small-font;
+}
+
+.font-weight-medium {
+  font-weight: 500;
+}
+
+p {
+  margin-bottom: 0;
+
+  & + & {
+    margin-top: 15px;
+  }
+}
+
+.text-muted {
+  opacity: 0.6;
+  color: inherit !important;
+}

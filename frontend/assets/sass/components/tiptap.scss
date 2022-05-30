@@ -1,0 +1,6 @@
+@import "../variables";
+.ProseMirror {
+    &:focus{
+        outline: none;
+    }
+}
